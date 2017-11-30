@@ -1,0 +1,25 @@
+目录组织如下：
+encode目录完成tfrecord编码
+model目录完成tensorflow的训练、在pretrained model上持续训练、测试auc、logloss
+model支持fm / fmuv / deepfm（fnn） / pnn1 (其他如LR、pnn2、ccpm等模型未经调试)
+.
+├── README
+├── a
+├── encode
+│   ├── rand_map.py
+│   ├── rand_reduce.py
+│   ├── run_encoding.sh
+│   ├── run_tfrecord.sh
+│   ├── tfrecord_convert.py
+│   └── train_encode.sh
+└── model
+    ├── core
+    │   ├── batch_input.py
+    │   ├── eval.py
+    │   ├── models.py
+    │   ├── run_eval.sh
+    │   ├── train.py
+    │   └── utils.py
+    ├── tf_evaluate.sh
+    └── tf_train.sh
+
