@@ -4,7 +4,6 @@ model目录完成tensorflow的训练、在pretrained model上持续训练、测�
 model支持fm / fmuv / deepfm（fnn） / pnn1 (其他如LR、pnn2、ccpm等模型未经调试)
 .
 ├── README
-├── a
 ├── encode
 │   ├── rand_map.py
 │   ├── rand_reduce.py
